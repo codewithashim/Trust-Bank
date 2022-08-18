@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Bank || Dashboadrd</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="py-4">
+        <h1 class="text-3xl text-center font-bold font-serif text-teal-50">Deposit Your Balence</h1>
+        <img class="mx-auto h-12 w-auto" src="./img/logo.png" alt="Trust Bank">
+    </header>
+    <main>
+        <section id="depositSectionMonitor" class="py-3">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-400 p-8 w-70 text-center rounded">
+                    <h4 class="font-bold text-2xl text-gray-100">Diposit</h4>
+                    <h2 class="text-5xl mt-2 font-bold text-slate-50">$ <span id="dipositTotal">000</span></h2>
+
+                </div>
+                <div class="bg-pink-400 p-8 w-70 text-center rounded">
+                    <h4 class="font-bold text-2xl text-gray-100">Widrow</h4>
+                    <h2 class="text-5xl mt-2 font-bold text-slate-50">$<span id="widrowAmount">000</span></h2>
+                </div>
+
+                <div class="bg-orange-500 p-8 w-70 text-center rounded">
+                    <h4 class="font-bold text-2xl text-gray-100">Balance</h4>
+                    <h2 class="text-5xl mt-2 font-bold text-slate-50">$<span id="balanceTotal">1254</span></h2>
+                </div>
+            </div>
+        </section>
+        <section id="depositSetionFrom">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-5 w-9/12 mx-auto">
+                <div class="p-14 rounded w-90 bg-blue-500">
+                    <h1 class="font-bold text-3xl text-white mb-2 font-serif">Pless Deposit Now</h1>
+                    <div>
+                        <label class="block">
+                            <span class="block text-sm font-mono text-slate-100 mb-1">Enter A Amaunt</span>
+                            <input type="number" id="depositInput"
+                                class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 border-2 rounded-md" />
+                        </label>
+                        <button id="depositBtn"
+                            class="transition font-serif ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:text-white duration-300 rounded bg-slate-50 px-5 py-1 mt-4">
+                            Deposit
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-14 rounded w-90 bg-red-500">
+                    <h1 class="font-bold text-3xl text-white mb-2 font-serif">Pless Widrow Now</h1>
+                    <div>
+                        <label class="block">
+                            <span class="block text-sm font-mono text-slate-100 mb-1">Enter A Amaunt</span>
+                            <input type="number" id="widrowInput"
+                                class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 border-2 rounded-md" />
+                        </label>
+                        <button id="widrowBtn"
+                            class="transition font-serif ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:text-white duration-300 rounded bg-slate-50 px-5 py-1 mt-4">
+                            Widrow
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================== js all file =============== -->
+    <!-- <script src="./js/diposit.js"></script>
+    <script src="./js/widrow.js"></script> -->
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
